@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2 Skills Test</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /*body{
+            background-image: url("https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/9804865a-f6de-47d0-b463-c569491b9621/OBMC+MONTESSORI+FV+1+-+AY+2026+FA.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }*/
+
+                p{
+            font-size: 23px;
+            line-height: 50px;
+        }
+
+        html{
+            scroll-behavior: smooth;
+            scroll-padding-top: 150px;
+        }
+
+        .navbar{
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+        body{
+            background-image: url("https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/eb98ffc0-3110-41ac-af77-7139e634afea/OBMC+Intermediate+classroom+3.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .enrollmenttitle{
+            background-color: white;
+            border-style: solid;
+            border-width: 5px;
+            border-color: rgb(6, 104, 126);
+            border-radius: 32px;
+            width: 75%;
+            display: block;
+            margin: auto;
+        }
+
+        form{
+            background-color: white;
+            border-radius: 32px;
+            display: block;
+            margin: auto;
+            width: 52%;
+        }
+
+        form h2{
+            font-size: 23px;
+        }
+
+        label, input{
+            margin-left: 25px;
+        }
+
+        input{
+            width: 45%;
+        }
+
+        #lastname{
+            margin-left: 50%;
+        }
+
+        /*.campus-photos img{
+            width: 70%;
+            height: 65%;
+            border-radius: 50px;
+        }
+
+        .campus-photos h2{
+            font-size: 50px;
+            color: rgb(6, 104, 126);
+        }
+
+        footer{
+            /*background-color: rgb(6, 104, 126);
+            height: 150%;
+            width: 100%;
+            box-sizing: border-box;
+            display: block;
+            margin: auto;
+            position: sticky;
+        }
+
+        .image-container img{
+            display: block;
+            margin: auto;
+            width: 100%;
+        }
+
+        table, th, td{
+            border: 3px solid rgb(55, 78, 141);
+            border-collapse: collapse;
+            margin-top: 32px;
+        }
+
+
+        .contactuscontainer{
+            background-image: url("https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/9804865a-f6de-47d0-b463-c569491b9621/OBMC+MONTESSORI+FV+1+-+AY+2026+FA.jpg");
+            background-size: 150%;
+            background-repeat: no-repeat;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        .contactuscontainer2{
+            flex: 1;
+            background-color: rgb(255, 255, 255);
+            align-items: center;
+            display: block;
+            margin: auto;
+            width: 45%;
+            border-color: rgb(55, 78, 141);
+            border-width: 3px;
+            border-style: solid;
+        }
+
+        input::placeholder{
+            font-size: 15px;
+        }*/
+
+    </style>
+</head>
+<body>
+    <!--<nav class="navbar navbar-expand-lg navbar-light bg-light" style="border-bottom: solid; border-color: rgb(10, 125, 145);">
+        <div class="container-fluid">
+            <a class="navbar-brand"><img style="height: 125px;" src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/7c5f2399-faf0-4b55-abef-0d5a936d20c5/OBMC+-+60TH+LOGO+-+DIAMOND+SLOGAN+-+APPROVED+-+2026+FA_OBMC+-+COLOR+HORIZONTAL.png?format=1500w" alt="OBMC Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto" style="margin-left: 32px; font-size: 25px; gap: 23px;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" style="font-size: 32px;"><span style="font-size: 65px; color: rgb(10, 125, 145); margin-right: 37px;">|</span> CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="border-bottom: solid; border-color: rgb(6, 104, 126); border-width: 5px;">
+        <div class="container-fluid">
+            <a class="navbar-brand"><img style="height: 125px;" src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/7c5f2399-faf0-4b55-abef-0d5a936d20c5/OBMC+-+60TH+LOGO+-+DIAMOND+SLOGAN+-+APPROVED+-+2026+FA_OBMC+-+COLOR+HORIZONTAL.png?format=1500w" alt="OBMC Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto" style="margin-left: 0px; font-size: 21px; gap: 23px;">
+                    <li class="nav-item"></li>
+                    <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#campuses">Campuses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#admissions">Admissions</a>
+                    </li>
+                </ul>
+                <a class="btn" href="#contact" style="background-color: rgb(6, 104, 126); border-radius: 50px; color: white; margin-right: 5%; width: 160px; font-size: 23px">MY PORTAL</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <div class="admissionscontainer">
+        <div class="row justify-content-center">
+            <div class="col">
+                <div class="enrollmenttitle">
+                    <h1 style="text-align: center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: rgb(6, 104, 126); font-size: 75px;"><b>OBMC Enrollment Form</b></h1>
+                </div>
+                <br><br>
+                <form>
+                    <br>
+                    <h2 style="margin-left: 23px;">Student Information</h2>
+                    <br>
+                    <label for="firstname">First Name</label>
+                    <br>
+                    <input type="text" id="firstname" name="firstname">
+                    <label for="lastname">Last Name</label>
+                    <br>
+                    <input type="text" id="lastname" name="lastname">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="w-100 d-block" style="margin-top: 75px;">
+        <hr>
+        <p style="color: rgb(17, 16, 16); text-align: center;" class="foot">&copy; 2026 OBMC Website | Created by [Fabrice Betina T. Serapio - 9-Sapphire]</p>
+    </footer>
+</body>
+</html>
