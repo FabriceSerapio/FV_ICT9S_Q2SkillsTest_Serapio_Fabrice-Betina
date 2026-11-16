@@ -50,24 +50,41 @@
             border-radius: 32px;
             display: block;
             margin: auto;
-            width: 52%;
+            width: 37%;
         }
 
         form h2{
             font-size: 23px;
         }
 
-        label, input{
+        label, input, select{
             margin-left: 25px;
         }
 
-        input{
-            width: 45%;
+        input, select{
+            width: 87%;
+            margin-bottom: 35px;
+        }
+        
+        input[type=radio]{
+            width: 3%;
         }
 
+        /*
         #lastname{
-            margin-left: 50%;
+            margin-left: 0px;
         }
+
+        .inputgroup{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .form-row{
+            display: flex;
+            gap: 0;
+        }*/
 
         /*.campus-photos img{
             width: 70%;
@@ -155,14 +172,14 @@
             <div class="collapse navbar-collapse" id="mynavbar">
                 <ul class="navbar-nav me-auto" style="margin-left: 0px; font-size: 21px; gap: 23px;">
                     <li class="nav-item"></li>
-                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="https://fabriceserapio.github.io/FV_ICT9S_Q2Seatwork2_Serapio_Fabrice-Betina/" target="_self">Home</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#about">About Us</a>
+                    <a class="nav-link" href="https://fabriceserapio.github.io/FV_ICT9S_Q2Seatwork2_Serapio_Fabrice-Betina/" target="_self">About Us</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#campuses">Campuses</a>
-                    </li>
+                    <a class="nav-link" href="https://fabriceserapio.github.io/FV_ICT9S_Q2Seatwork2_Serapio_Fabrice-Betina/" target="_self">Campuses</a>
+
                     <li class="nav-item">
                         <a class="nav-link" href="#admissions">Admissions</a>
                     </li>
@@ -176,7 +193,7 @@
     <br><br>
     <br><br>
     <br><br>
-    <div class="admissionscontainer">
+    <div class="admissionscontainer" id="admissions">
         <div class="row justify-content-center">
             <div class="col">
                 <div class="enrollmenttitle">
@@ -185,14 +202,71 @@
                 <br><br>
                 <form>
                     <br>
+                    <p style="font-size: 15px; margin-left: 23px; color: gray;">Kindly fill out this form to enroll for the upcoming school year.</p>
                     <h2 style="margin-left: 23px;">Student Information</h2>
                     <br>
-                    <label for="firstname">First Name</label>
+                    
+                    <label for="firstname">Name</label>
                     <br>
-                    <input type="text" id="firstname" name="firstname">
-                    <label for="lastname">Last Name</label>
+                    <input type="text" id="name" name="name" placeholder="First Name and Last Name">
+                    
+                    <label for="date">Date of Birth</label>
                     <br>
-                    <input type="text" id="lastname" name="lastname">
+                    <input type="text" id="date" name="date" placeholder="mm/dd/yyyy">
+
+                    <label for="gender">Gender</label>
+                    <br>
+                    <select id="gender" name="gender">
+                        <option value="">Select</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+
+                    <label for="grade">Grade Level</label>
+                    <br>
+                    <select id="grade" name="date">
+                        <option value="">Select</option>
+                        <option value="Junior Casa">Junior Casa</option>
+                        <option value="Junior Advanced Casa">Junior Advanced Casa</option>
+                        <option value="Advanced Casa">Advanced Casa</option>
+                        <option value="Grade 1">Grade 1</option>
+                        <option value="Grade 2">Grade 2</option>
+                        <option value="Grade 3">Grade 3</option>
+                        <option value="Grade 4">Grade 4</option>
+                        <option value="Grade 5">Grade 5</option>
+                        <option value="Grade 6">Grade 6</option>
+                        <option value="Grade 7">Grade 7</option>
+                        <option value="Grade 8">Grade 8</option>
+                        <option value="Grade 9">Grade 9</option>
+                        <option value="Grade 10">Grade 10</option>
+                        <option value="Grade 11">Grade 11</option>
+                        <option value="Grade 12">Grade 12</option>
+                    </select>
+                    
+                    <h2 style="margin-left: 23px;">Contact Details</h2>
+                    <br>
+
+                    <label for="email">Email Address</label>
+                    <br>
+                    <input type="text" id="email" label="email" placeholder="student@email.com">
+
+                    <label for="number">Contact Number</label>
+                    <br>
+                    <input type="text" id="number" name="number" placeholder="0912-345-6767">
+                    
+                    <h2 style="margin-left: 23px;">Other Information</h2>
+                    <br>
+
+                    <p style="font-size: 15px; margin-left: 23px;">Mode of Learning</p>
+                    
+                    
+                    <input type="radio" id="facetoface" name="facetoface" value="facetoface"> 
+                    <label for="facetoface">Face-to-Face</label>
+                    <br>
+                    <input type="radio" id="online" name="online" value="online">
+                    <label for="online">Online</label>
+                    <br>
                 </form>
             </div>
         </div>
